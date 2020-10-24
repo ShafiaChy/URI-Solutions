@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+    char j[2];
+
+    int i,t,a,result1=0,result2=0,result3=0;
+    cin>>t;
+    float result,p1,p2,p3;
+    for(a=0;a<t;a++)
+    {
+
+        cin>>i>>j;
+
+        result+=i;
+
+            if(j[0]=='C'){
+            result1= result1+i;
+            }
+            if(j[0]=='R'){
+            result2= result2+i;
+            }
+            if(j[0]=='S'){
+            result3= result3+i;
+            }
+
+    }
+    p1=(result1/result)*100;
+    p2=(result2/result)*100;
+    p3=(result3/result)*100;
+
+        cout<<"Total: "<<result<<" cobaias\n"<<"Total de coelhos: "<<result1<<"\n"<<"Total de ratos: "<<result2<<"\n"<<"Total de sapos: "<<result3<<"\n";
+
+        printf("Percentual de coelhos: %0.2f %\nPercentual de ratos: %0.2f %\nPercentual de sapos: %0.2f %\n",p1,p2,p3);
+        return 0;
+}
