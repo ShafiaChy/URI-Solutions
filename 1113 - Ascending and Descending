@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int A,B;
+
+   while(scanf("%d %d",&A,&B)){
+    if(A>B)
+    {
+       printf("Decrescente\n");
+    }
+    else if(A<B)
+    {
+        printf("Crescente\n");
+    }
+    else if(A==B){
+        break;
+    }
+
+   }
+    return 0;
+}
